@@ -1,27 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-@media screen and (min-width: 992px) {
-    body {
-        background-image: url('../img/background.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-    }
 
-    main.container-fluid {
-        margin-left: 30%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
-
-    header p {
-        display: none;
-    }
-}
 
 header p {
-    display: inherit;
+    display: none;
+
 }
 
 body {
@@ -73,15 +57,20 @@ h3 {
 	font-size: 125%;
 }
 
-.container-fluid {
+main {
 	background-image: url('../img/ricepaper_v3.png');
 	opacity: 0.9;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.standard {
-	padding: 1em;
+
+
+header, section, footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 header {
@@ -124,4 +113,29 @@ footer {
 	border-top-width: 5px;
 	font-size: 80%;
 	text-align: right;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url('../img/background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-size: 16px;
+    }
+
+    main.container-fluid {
+        margin-left: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    header p {
+        display: inline;
+    }
+
+    nav {
+        top: 10px;
+        right: 10px;
+    }
 }
