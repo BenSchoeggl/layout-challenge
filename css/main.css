@@ -106,6 +106,10 @@ dd {
 	margin-bottom: 1em;
 }
 
+#meatPies {
+	padding-left: 0;
+}
+
 footer {
 	background-color: #FC892F;
 	border-top-style: solid;
@@ -120,7 +124,7 @@ footer {
         background-image: url('../img/background.jpg');
         background-size: cover;
         background-attachment: fixed;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     main.container-fluid {
@@ -134,7 +138,12 @@ footer {
         display: inline;
     }
 
+	header {
+		position: relative;
+	}
+
     nav {
+		position: absolute;
         top: 10px;
         right: 10px;
     }
